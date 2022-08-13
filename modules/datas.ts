@@ -24,7 +24,7 @@ export const workDatas: WorkDatas = {
 			app: 'https://github.com/bazarkua/dogs-app'
 		},
 		{
-			title: 'Dog Breeds Dashboard',
+			title: 'Rental Cars Database',
 			image: '/assets/images/2021/carworms.png',
 			app: 'https://github.com/bazarkua/car-worms-new'
 		},
