@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 100 100">
+  <g stroke="#000" fill="none">
+    <path d="M5,60 A16,30 60,1,1 95,40 M10,60 A15,30 60,1,1 90,40 M15,60 A14,30 60,1,1 85,40 M20,60 A13,30 60,1,1 80,40 M5,60 A16,30 60,0,0 95,40 M10,60 A15,30 60,0,0 90,40 M15,60 A14,30 60,0,0 85,40 M20,60 A13,30 60,0,0 80,40" stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg style="enable-background:new" xmlns="http://www.w3.org/2000/svg" height="512" width="512" version="1.1" viewBox="0 0 512 512">
+ <defs>
+  <linearGradient id="b" gradientUnits="userSpaceOnUse" x2="512" y2="512">
+   <stop stop-color="#300b33" offset="0"/>
+   <stop stop-color="#3b1841" offset="1"/>
+  </linearGradient>
+  <linearGradient id="a" y2="256" gradientUnits="userSpaceOnUse" y1="256" x2="391" x1="121.4">
+   <stop stop-color="#ed3146" offset="0"/>
+   <stop stop-color="#ed4231" offset="1"/>
+  </linearGradient>
+ </defs>
+ <rect style="color:#000000;enable-background:accumulate" height="512" width="512" y="0" x="0" fill="url(#b)"/>
+ <path style="enable-background:new" fill-rule="evenodd" fill="url(#a)" d="m359.9 390.4-17.8-17.9-18 18h-32.6l66.2-68.2v-61.32l-34.39-36.39v102.2l-31.22 31.22h-72l-31.2-31.2v-102.2l-34.39 36.39v61.3l66.2 68.2h-32.55l-17.99-17.99-17.86 17.86h-31.14l31.27-31.27-29.98-29.98v-111.6l96.09-96.09h74.64l96.09 96.09v111.5l-29.98 29.98 31.51 31.27z"/>
+ <g>
+  <path d="m191.2 291.7 34.45-34.45h62.01l34.72 34.72-33.68 33.68h-62.78z"/>
+  <circle r="8.42" cx="275.8" cy="217.8"/>
+  <circle cy="217.8" cx="-236.3" r="8.42" transform="scale(-1,1)"/>
+ </g>
+ <g style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" stroke-width="24.66" fill="#fff">
+  <rect y="257.4" width="9.187" x="226" height="22.46"/>
+  <rect y="257.4" width="9.187" x="242.8" height="22.46"/>
+  <rect y="257.4" width="9.187" x="260.3" height="22.46"/>
+  <rect y="257.4" width="9.187" x="277" height="22.46"/>
+  <rect y="303.1" width="9.187" x="226" height="22.46"/>
+  <rect y="303.1" width="9.187" x="242.8" height="22.46"/>
+  <rect y="303.1" width="9.187" x="260.3" height="22.46"/>
+  <rect y="303.1" width="9.187" x="277" height="22.46"/>
+ </g>
+</svg>
