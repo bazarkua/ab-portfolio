@@ -44,10 +44,9 @@ const styles = {
 		left: 30px;
 	`,
 	list: css`
-		width: 200px;
 		display: flex;
 		flex-direction: column;
-		grid-gap: 10px;
+		grid-gap: 20px;
 		margin: 0;
 		padding: 0;
 		list-style-type: none;

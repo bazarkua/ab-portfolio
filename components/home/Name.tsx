@@ -32,7 +32,7 @@ const styles = {
 	container: css`
 		position: absolute;
 		top: 20px;
-		left: 30px;
+		left: 10px;
 		display: flex;
 		flex-direction: column;
 		grid-gap: 5px;

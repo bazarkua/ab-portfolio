@@ -29,7 +29,7 @@ export const Profile: VFC = () => {
 			</button>
 			<div css={styles.detailContainer}>
 				<div ref={dividerRef} css={styles.divider} />
-				<Block title="Name">Adilbek</Block>
+				<Block title="Name">Adilbek Bazarkulov</Block>
 				<Block title="Location">USA, Corvallis, OR</Block>
 				<Block title="Contact">
 					<a
@@ -125,7 +125,7 @@ const styles = {
 		}
 	`,
 	subTitle: css`
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 		${colorStyles.subText}
 	`,
 	text: css`
@@ -148,6 +148,7 @@ const styles = {
 			right: 0;
 			width: 100px;
 			height: 2px;
+			background-color:white;
 			transform-origin: left;
 			transition: transform 0.3s, width 0.3s;
 		}
