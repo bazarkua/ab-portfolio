@@ -37,7 +37,9 @@ const styles = {
 		padding-right: 0;
 		@media (max-width: 890px) {
 			position: absolute;
-			margin-top: 330px
+			margin-top: 330px;
+			display: grid;
+			grid-auto-rows: 500px;
 		  }
 	`,
 	cardContainer: css`
@@ -46,7 +48,7 @@ const styles = {
 		height: 100%;
 		padding-right: 30px;
 		display: grid;
-		grid-gap: 15px;
+		grid-gap: 45px;
 		grid-auto-rows: 300px;
 		grid-template-columns: repeat(auto-fill, minmax(min(400px, 100vw), 1fr));
 		overflow: auto;
