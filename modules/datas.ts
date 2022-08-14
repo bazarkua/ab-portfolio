@@ -41,6 +41,26 @@ export const workDatas: WorkDatas = {
 			image: '/assets/images/2020/pizza.webp',
 			app: 'https://github.com/bazarkua/pizza-portal'
 		},
+		{
+			title: 'Wumpus C++ Console Game',
+			image: '/assets/images/2020/wumpus.svg',
+			app: 'https://github.com/bazarkua/Hunt-the-wumpus-console-game'
+		},
+		{
+			title: 'Pizza Portal C++ Console Application',
+			image: '/assets/images/2020/pizza.webp',
+			app: 'https://github.com/bazarkua/pizza-portal'
+		},
+		{
+			title: 'Wumpus C++ Console Game',
+			image: '/assets/images/2020/wumpus.svg',
+			app: 'https://github.com/bazarkua/Hunt-the-wumpus-console-game'
+		},
+		{
+			title: 'Pizza Portal C++ Console Application',
+			image: '/assets/images/2020/pizza.webp',
+			app: 'https://github.com/bazarkua/pizza-portal'
+		},
 	]
 }
 

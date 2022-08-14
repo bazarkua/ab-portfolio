@@ -35,17 +35,10 @@ const SkillGroup: VFC<SkillGroupProps> = ({ header, datas }) => {
 				{
 				
 				datas.map(function(data, i){
-					if((i % 5) == 0){
 					return(
 						<Card key={i} data={data} />
 					)
-					}
-					else{ return(
-						<Card key={i} data={data} />
-					)
-					}
 				} )
-					
 				}
 				
 			</div>
