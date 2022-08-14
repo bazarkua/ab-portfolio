@@ -49,6 +49,8 @@ export const skillCategories = ['All', 'Active'] as const
 export const skillDatas: SkillDatas = {
 	languages: [
 		{ name: 'Python', iconName: 'python', experience: '2 years', isActive: true },
+		{ name: 'C++', iconName: 'c++', experience: '3 years', isActive: true },
+		{ name: 'C', iconName: 'c', experience: '1 year', isActive: true },
 		{ name: 'JavaScript', iconName: 'javascript', experience: '1 year', isActive: true },
 		{ name: 'TypeScript', iconName: 'typescript', experience: '3 months', isActive: true },
 	],
