@@ -2,18 +2,23 @@ import Link from 'next/link';
 import React, { useRef, VFC } from 'react';
 import { css } from '@emotion/react';
 import { colorStyles, useColorManager } from '../../modules/colorManager';
+import { Name } from './Name';
 
 export const Menu: VFC = () => {
 	const worksRef = useRef<HTMLLIElement>(null)
 	const skillsRef = useRef<HTMLLIElement>(null)
 	const githubRef = useRef<HTMLLIElement>(null)
-	const telegramRef = useRef<HTMLLIElement>(null)
+	const aboutMeRef = useRef<HTMLLIElement>(null)
 
-	useColorManager([worksRef, skillsRef, githubRef, telegramRef])
+	useColorManager([worksRef, skillsRef, githubRef, aboutMeRef])
 
 	return (
+		
 		<nav css={styles.container}>
 			<ul css={styles.list}>
+				<li>
+					<Name/>	
+				</li>
 				<li ref={worksRef} css={styles.item}>
 					<Link href="/works">
 						<a>Projects</a>
@@ -29,6 +34,11 @@ export const Menu: VFC = () => {
 						GitHub
 					</a>
 				</li>
+				<li ref={aboutMeRef} css={styles.item}>
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						About me
+					</a>
+				</li>
 			</ul>
 		</nav>
 	)
@@ -39,32 +49,32 @@ export const Menu: VFC = () => {
 
 const styles = {
 	container: css`
-		position: absolute;
-		top: 150px;
-		left: 30px;
+		
 	`,
 	list: css`
-		display: flex;
-		flex-direction: column;
-		grid-gap: 20px;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		font-size: 3rem;
-		${colorStyles.mainText};
-		@media (max-width: 700px) {
-			background-color: rgba(0, 0, 0, 0.8);
-			border-radius: 30px;
-			padding:10px
 		
+		display: flex;
+		position: absolute;
+		flex-direction: rows;
+		grid-gap: 64px;
+		margin: 0;
+		padding: 30px;
+		list-style-type: none;
+		top: 0px;
+		font-size: 3rem;
+		width: 100%;
+		
+		${colorStyles.mainText};
+		@media (max-width: 1200px) {
+			flex-direction: column;
+			background-color: rgba(0, 0, 0, 0.22);
+			border-radius: 0px 0px 36px 36px;
 		  }
 	`,
 	item: css`
 		position: relative;
-		width: 100%;
 		transition: width 0.5s;
-
-		${colorStyles.textBefore}
+		${colorStyles.mainText}
 
 		&::before {
 			content: '';
@@ -76,7 +86,7 @@ const styles = {
 		}
 
 		&:hover {
-			${colorStyles.mainText}
+			${colorStyles.textBefore}
 			&::before {
 				width: 100%;
 			}

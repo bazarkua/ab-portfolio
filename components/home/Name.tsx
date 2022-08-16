@@ -30,15 +30,15 @@ export const Name: VFC = () => {
 
 const styles = {
 	container: css`
-		position: absolute;
-		top: 20px;
-		left: 10px;
 		display: flex;
 		flex-direction: column;
-		grid-gap: 5px;
 	`,
 	subText: css`
-		font-size: 3.5rem;
+		font-size: 3rem;
+		@media (max-width: 1200px) {
+			font-size: 2.5rem;
+			padding-top: 25px;
+		  }
 		${colorStyles.mainText}
 	`
 }

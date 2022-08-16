@@ -71,6 +71,7 @@ const styles = {
 		bottom: 20px;
 		left: 30px;
 		width: 300px;
+		border: solid 5px white;
 
 		transform: translate(0, 91%);
 		transition: all 0.5s;

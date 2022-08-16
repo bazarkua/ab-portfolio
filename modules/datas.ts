@@ -16,6 +16,11 @@ export const workDatas: WorkDatas = {
 			image: '/assets/images/2022/linux.png',
 			app: 'https://github.com/bazarkua/smallsh'
 		},
+		{
+			title: 'UX/UI Design Research for Social Application',
+			image: '/assets/images/2022/teamup.png',
+			app: 'https://docs.google.com/document/d/1x5nt1r5BHSA5ZAna_1sC-_2sUk0HyO-mzBycDTH36nM/edit?usp=sharing'
+		},
 	],
 	2021: [
 		{

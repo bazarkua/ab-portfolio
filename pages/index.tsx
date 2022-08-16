@@ -19,9 +19,8 @@ const Home: VFC = () => {
 		<Layout>
 			<div css={styles.container}>
 				<TCanvas />
-				<Name />
 				<Menu />
-				<Profile />
+				{/*<Profile />*/}
 				<DisplayModeButton />
 				{!appSnap.endLoading && <Loading />}
 			</div>

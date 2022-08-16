@@ -26,9 +26,9 @@ export default function TCanvas() {
 			{/* scene */}
 				
 				{appSnap.displayMode === 'light' ? (
-					<color attach="background" args={['#3b3a3a']} />
+					<color attach="background" args={['#3957bf']} />
 				) : (
-					<color attach="background" args={['#000000']} />
+					<color attach="background" args={['#001c80']} />
 				)
 				}
 			
@@ -99,7 +99,7 @@ const SVGMesh: VFC = () => {
 		<group ref={ref} scale={0.029}>
 			{geometries.map((geometry, i) => (
 				<mesh key={i} geometry={geometry}>
-					<meshBasicMaterial color="#fff" toneMapped={false} side={THREE.DoubleSide} />
+					<meshBasicMaterial color="#7dadfa" toneMapped={false} side={THREE.DoubleSide} />
 				</mesh>
 			))}
 		</group>

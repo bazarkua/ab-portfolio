@@ -39,18 +39,18 @@ const transition = {
 
 export const colorStyles = {
 	background: css`
-		background-color: #3b3a3a;
+		background-color: #3957bf;
 		&.dark {
-			background-color: #000000;
+			background-color: #001c80;
 		}
 		&.transition {
 			${transition.background}
 		}
 	`,
 	mainText: css`
-		color: white;
+		color: black;
 		&.dark {
-			color: #fff;
+			color: white;
 		}
 		&.transition {
 			${transition.color}
