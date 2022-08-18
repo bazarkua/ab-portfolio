@@ -42,7 +42,7 @@ const styles = {
 		left: 0px;
 		width: 100%;
 		height: 100%;
-		background-color: #161616;
+		background-color: #001c80;
 		display: flex;
 		justify-content: center;
 		align-items: center;

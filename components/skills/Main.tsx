@@ -68,7 +68,10 @@ const styles = {
 		${colorStyles.mainText}
 	`,
 	skillGroup: css`
-		margin-bottom: 80px;
+		margin-bottom: 60px;
+		@media (max-width:890px) {
+			margin-bottom: 260px;
+		}
 	`,
 	cardContainer: css`
 		display: flex;

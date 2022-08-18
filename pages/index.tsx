@@ -24,6 +24,9 @@ const Home: VFC = () => {
 				<DisplayModeButton />
 				{!appSnap.endLoading && <Loading />}
 			</div>
+			<div css={styles.container}>
+					
+			</div>
 		</Layout>
 	)
 }

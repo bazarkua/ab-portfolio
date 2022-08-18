@@ -38,6 +38,7 @@ const styles = {
 		position: relative;
 		width: 100%;
 		height: 100%;
+		border-radius: 35px;
 	`,
 	titleContainer: css`
 		position: absolute;

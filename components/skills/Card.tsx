@@ -80,7 +80,7 @@ const styles = {
 	container: css`
 		position: relative;
 		width: 200px;
-		height: 80px;
+		height: 170px;
 		display: grid;
 		grid-template-columns: auto 1fr;
 		transition: all 0.3s;
