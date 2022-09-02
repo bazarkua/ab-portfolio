@@ -18,7 +18,7 @@ const About = () => {
     <div className='h-[100px]'>
 
 </div>
-    <div className='w-full md:h-screen p-2 flex items-center bg-[#36b0ff] mb-1 shadow-2xl'>
+    <div className='w-full md:h-screen p-2 flex items-center bg-[#36b0ff] mb-1'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 shadow-2xl rounded-2xl p-20 bg-white'>
         <div className='col-span-2'>
           <p className='py-2'>
