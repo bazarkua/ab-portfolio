@@ -54,20 +54,9 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='flex justify-between shadow-xl items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
-          <a className='hover:scale-110 ease-in-out duration-500'>
-            <Image
-              src={NavLogo}
-              alt='/'
-              width='100'
-              height='100'
-              className='cursor-pointer opacity-60'
-            />
-          </a>
-        </Link>
+      <div className='flex absolute relative lg:left-[50%] top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white p-2'>
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex text-lg uppercase tracking-widest'>
+          <ul style={{ color: `${linkColor}` }} className='hidden xl:flex text-xl uppercase'>
             <li className="m-16 relative group">
               <Link href="/">
               <span>Home</span>
@@ -109,7 +98,7 @@ const Navbar = () => {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className='md:hidden'
+            className='xl:hidden'
           >
             <AiOutlineMenu size={25} />
           </div>
@@ -120,7 +109,7 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+          nav ? 'xl:hidden fixed left-0 top-0 w-full h-full bg-black/70' : ''
         }
       >
         {/* Side Drawer Menu */}
@@ -131,67 +120,57 @@ const Navbar = () => {
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
-          <div >
-            <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-                <a>
-                  <Image
-                    src={NavLogo}
-                    width='87'
-                    height='87'
-                    alt='/'
-                    className='opacity-50'
-                  />
-                </a>
-              </Link>
+            <div className='flex'>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg p-3 cursor-pointer text-white'
-              >
+                className='rounded-full shadow-lg p-3 cursor-pointer text-white relative left-[95%]'>
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-            </div>
-          </div>
-          <div className='py-1 flex flex-col text-white'>
-            <ul className='uppercase'>
-              <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Home
-                </li>
+          <div className='py-1 flex flex-col text-white h-screen'>
+            <ul className='uppercase md:text-2xl py-8'>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/">
+              <span>Home</span>
               </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
-                </li>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/#about">
+              <span>About</span>
               </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
-                </li>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/#skills">
+              <span>Skills</span>
               </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
-                </li>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/#projects">
+              <span>Projects</span>
               </Link>
-              <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
-                </li>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/resume">
+              <span>Resume</span>
               </Link>
-              <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
-                </li>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
+            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+              <Link href="/#contact">
+              <span>Contact</span>
               </Link>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            </li>
             </ul>
-            <div className='pt-10'>
-              <p className='uppercase tracking-widest text-white'>
+            <div className='pt-1'>
+              <p className='uppercase tracking-widest text-white text-center'>
                 Let&#39;s Connect
               </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+              <div className='flex items-center justify-between my-4'>
                 <a
                   href='https://www.linkedin.com/in/bazarkua'
                   target='_blank'
