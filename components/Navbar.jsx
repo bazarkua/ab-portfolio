@@ -6,11 +6,15 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/fav.svg'
+import {MdDarkMode, MdLightMode} from 'react-icons/md';
+import { CgDarkMode } from 'react-icons/cg';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#36b0ff');
+  const [navBg, setNavBg] = useState('black');
   const [linkColor, setLinkColor] = useState('#ffff');
   // const [position, setPosition] = useState('fixed')
   // const router = useRouter();
@@ -33,7 +37,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
+  
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -47,69 +51,61 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}`}}
+      style={{ backgroundColor: `${navBg}`, opacity:"0.95"}}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl shadow-[#ffff] z-[100] ease-in-out duration-300'
+          ? 'fixed w-full h-20 bg-[#F8F7FF] shadow-[#ffff] z-[100] ease-in-out duration-300'
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='flex absolute relative lg:left-[50%] top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white p-2'>
+      <div className='flex justify-between items-center w-full h-full px-14 2xl:px-16'>
+        
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden xl:flex text-xl uppercase'>
-            <li className="m-16 relative group">
-              <Link href="/">
-              <span>Home</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <Link href='/#home'>Home</Link>
             </li>
-            <li className="m-16 relative group">
-              <Link href="/#about">
-              <span>About</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <Link href='/#about'>About</Link>
             </li>
-            <li className="m-16 relative group">
-              <Link href="/#skills">
-              <span>Skills</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <Link href='/#skills'>Skills</Link>
             </li>
-            <li className="m-16 relative group">
-              <Link href="/#projects">
-              <span>Projects</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <Link href='/#projects'>Projects</Link>
             </li>
-            <li className="m-16 relative group">
-              <Link href="/resume">
-              <span>Resume</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            <li className='ml-10 text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <button className='shadow-none text-white font-light hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>Resume</button>
             </li>
-            <li className="m-16 relative group">
-              <Link href="/#contact">
-              <span>Contact</span>
-              </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+              <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className='xl:hidden'
+            className='md:hidden'
           >
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={25} style={{ color: 'white'}} />
           </div>
         </div>
+        <Link href='/'>
+          <a>
+            <CgDarkMode
+              size={25}
+              className='cursor-pointer'
+              style={{ color: 'white'}}
+            />
+          </a>
+        </Link>
       </div>
 
       {/* Mobile Menu */}
       {/* Overlay */}
       <div
         className={
-          nav ? 'xl:hidden fixed left-0 top-0 w-full h-full bg-black/70' : ''
+          nav ? 'md:hidden fixed left-0 top-0 w-full h-full bg-black/70' : ''
         }
       >
         {/* Side Drawer Menu */}
@@ -123,51 +119,52 @@ const Navbar = () => {
             <div className='flex'>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg p-3 cursor-pointer text-white relative left-[95%]'>
-                <AiOutlineClose />
+                className='rounded-full text-xl p-2 cursor-pointer text-gray-700 relative left-[95%] hover:scale-110 ease-in duration-300'>
+                <AiOutlineClose
+                style={{ color: 'white'}} />
               </div>
             </div>
-          <div className='py-1 flex flex-col text-white h-screen'>
+          <div className='py-1 flex flex-col text-gray-100 h-screen'>
             <ul className='uppercase md:text-2xl py-8'>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
-              <Link href="/">
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
+              <Link href="/#home">
               <span>Home</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100  transition-all group-hover:w-full"></span>
             </li>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
               <Link href="/#about">
               <span>About</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100 transition-all group-hover:w-full"></span>
             </li>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
               <Link href="/#skills">
               <span>Skills</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100 transition-all group-hover:w-full"></span>
             </li>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
               <Link href="/#projects">
               <span>Projects</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100 transition-all group-hover:w-full"></span>
             </li>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
               <Link href="/resume">
               <span>Resume</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100 transition-all group-hover:w-full"></span>
             </li>
-            <li className="relative group w-[30%] py-4" onClick={() => setNav(false)}>
+            <li className="relative group w-[30%] pt-6" onClick={() => setNav(false)}>
               <Link href="/#contact">
               <span>Contact</span>
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-100 transition-all group-hover:w-full"></span>
             </li>
             </ul>
-            <div className='pt-1'>
-              <p className='uppercase tracking-widest text-white text-center'>
+            <div className='pt-6'>
+              <p className='uppercase tracking-widest text-gray-100  text-center'>
                 Let&#39;s Connect
               </p>
               <div className='flex items-center justify-between my-4'>
@@ -176,8 +173,8 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
+                  <div className='rounded-full p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaLinkedinIn className='text-xl' />
                   </div>
                 </a>
                 <a
@@ -185,16 +182,16 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
+                  <div className='rounded-full p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaGithub  className='text-xl'/>
                   </div>
                 </a>
                 <Link href='/#contact'>
                   <div
                     onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-full p-3 cursor-pointer hover:scale-110 ease-in duration-300'
                   >
-                    <AiOutlineMail />
+                    <AiOutlineMail className='text-xl'/>
                   </div>
                 </Link>
               </div>

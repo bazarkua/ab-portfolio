@@ -11,16 +11,19 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Adilbek Bazarkulov | Portfolio Website</title>
-        <meta name="description" content="I’m a Computer Scientist" />
+        <title>Adilbek Bazarkulov</title>
+        <meta name="Adilbek Bazarkulov" content="Portfolio" />
         <link rel="icon" href="/logo.png" />
       </Head>
-    <Main />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-    <Footer/>
+    <main className='max-h-screen overflow-y-scroll snap snap-y snap-mandatory scroll-smooth'>
+      <Main className="one" />
+      <About className="two" />
+      <Skills className="three"/>
+      <Projects className="fourth"/>
+      <Contact className="fifth"/>
+      <Footer className="sixth"/>
+    </main>
+    
     </div>
   )
 }

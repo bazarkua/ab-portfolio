@@ -2,86 +2,41 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import AboutImg from '../public/assets/about.jpg';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
   return (
-    <div id='about'>
-
-      <div className='h-[100px]'>
-
-</div>  
-    <p className='uppercase text-2xl text-center tracking-widest pt-1'>
+    <div id='about' className='snap-always snap-start'>
+    <div className='w-full md:h-full flex items-center bg-[#eff7f6] bg-white pt-36 pb-36'>
+    <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pt-0 pl-12 text-2xl font-normal'>
             ABOUT
     </p>
-    <div className='h-[100px]'>
-
-</div>
-    <div className='w-full md:h-screen p-2 flex items-center bg-[#36b0ff] mb-1 shadow-2xl'>
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 shadow-2xl rounded-2xl p-20 bg-white'>
+      <div className='text-lg text-gray-800 max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-3xl p-20 bg-[#ffff] tracking-widest border-gradient-t-instagram-gradient-white border-transparent border-solid border-[1.5px]'>
         <div className='col-span-2'>
-          <p className='py-2'>
-            ...Introducing my self...
+        <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4'>
+            ABOUT
+        </p>
+          <p className='pt-6 py-2'>
+          My name is Adilbek Bazarkulov, I'm a student software developer currently studying at Oregon State University.
           </p>
           <p className='py-2'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam et, soluta laborum ducimus 
-            nam impedit eum adipisci reiciendis veniam fugit excepturi itaque minus minima vitae qui voluptatibus 
-            repellendus rem alias?
+          I believe that on the way to creating a great product, passion and enthusiasm go hand in hand with attention to small details. 
+          I've always wanted to use my creative energy and skills to create products that would have a positive impact on people. 
+          It has always fascinated me that technical skills combined with a great idea become such a powerful tool for creativity.
           </p>
           <p className='py-2'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam et, soluta laborum ducimus 
-            nam impedit eum adipisci reiciendis veniam fugit excepturi itaque minus minima vitae qui voluptatibus 
-            repellendus rem alias?
+          I'm currently a full-time student and working part-time as a Teaching Assistant for CS372 (Computer Networks) course at the College of 
+          Engineering, Oregon State University. In my free time, I strive to learn something new and expand my knowledge of Computer Science on my own. 
+          I also enjoy going out and playing volleyball with my friends.
           </p>
         </div>
-        <div className='w-full h-auto m-auto rounded-2xl flex items-center 
-        justify-center p-4 hover:scale-110 ease-in duration-300 hover:shadow-[#ffff] ease-in duration-300 hover:shadow-2xl ease-in duration-300'>
+        <div className='w-full h-auto m-auto rounded-3xl flex items-center 
+        justify-center p-4 hover:scale-110 ease-in duration-300 hover:shadow-[#ffff] ease-in duration-300'>
           <Image src={AboutImg} className='rounded-2xl' alt='/' />
         </div>
       </div>
     </div>
-    <div className='h-[100px]'>
-
-</div>
-    <p className='uppercase text-2xl text-center tracking-widest pt-1'>
-            Experience
-    </p>
-    <div className='h-[100px]'>
-
-</div>
-     {/* Timeline */}
-     <section className="w-full bg-[#36b0ff]">
-                  <VerticalTimeline>
-                              <VerticalTimelineElement
-                                  className="vertical-timeline-element--work"
-                                  contentStyle={{ background: 'white', color: 'black' }}
-                                  contentArrowStyle={{ borderRight: '7px solid  white' }}
-                                  date={2022}
-                                  iconStyle={{ background: '#36b0ff', color: 'white' }}>
-                                  <h3 className="vertical-timeline-element-title">SDE</h3>
-                                  <h4 className="vertical-timeline-element-subtitle">Corvallis, OR</h4>
-                                  <p>
-                                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error porro reiciendis laboriosam rerum incidunt 
-                                      quos natus eaque, veniam tempore ducimus at provident quia facilis corrupti aperiam. At, minima voluptatibus! Sint?
-                                  </p>
-                              </VerticalTimelineElement>
-                              <VerticalTimelineElement
-                                  className="vertical-timeline-element--work"
-                                  contentStyle={{ background: 'white', color: 'black' }}
-                                  contentArrowStyle={{ borderRight: '7px solid  white' }}
-                                  date={2022}
-                                  iconStyle={{ background: '#36b0ff', color: 'white' }}>
-                                  <h3 className="vertical-timeline-element-title">SDE</h3>
-                                  <h4 className="vertical-timeline-element-subtitle">Corvallis, OR</h4>
-                                  <p>
-                                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error porro reiciendis laboriosam rerum incidunt 
-                                      quos natus eaque, veniam tempore ducimus at provident quia facilis corrupti aperiam. At, minima voluptatibus! Sint?
-                                  </p>
-                              </VerticalTimelineElement>
-                  </VerticalTimeline>
-              </section>
-          </div>
+  </div>
   );
 };
 

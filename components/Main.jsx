@@ -3,7 +3,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import React, { useState, useEffect, useRef } from 'react'
-import WAVES from 'vanta/dist/vanta.waves.min'
+import BIRDS from 'vanta/dist/vanta.birds.min'
 import { TypeAnimation } from 'react-type-animation';
 
 const Main = (props) => {
@@ -22,7 +22,7 @@ const Main = (props) => {
   
   useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(WAVES({
+      setVantaEffect(BIRDS({
         el: myRef.current,
         mouseControls: true,
         touchControls: true,
@@ -31,11 +31,13 @@ const Main = (props) => {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0xa80f0,
-        shininess: 7.77,
-        waveHeight: 77.00,
-        waveSpeed: 0.75,
-        zoom: 0.7
+        backgroundColor: 0xffffff,
+        color1: 0x1c00f5,
+        color2: 0xfafafa,
+        speedLimit: 3.00,
+        separation: 60.00,
+        alignment: 30.00,
+        cohesion: 100.00
       }))
     }
     return () => {
@@ -44,25 +46,54 @@ const Main = (props) => {
   }, [vantaEffect])
   return <div ref={myRef}>
     
-    <div id='home' className='w-full h-screen flex justify-center items-center text-center'>
+    <div id='home' className='w-full h-screen flex justify-center items-center text-center snap-always snap-start'>
       <div className='w-screen h-screen'>
       
       {/* Scene here */}
 
         <div className='absolute fixed top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h1 className="py-4 text-gray-100">
-              Hi, I&#39;m <span className='text-white'> Adilbek </span>
+          <h1 className="py-4 text-gray-800">
+              Hi, I&#39;m <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> Adilbek </span>
           </h1>
-              <h2 className='text-gray-100'>
-                <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Engineer', 3000, 'A Enthuasist', 3000]}
+              <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-violet-500'>
+                <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Developer', 3000, 'A Enthuasist', 3000]}
                                wrapper="div"
                                cursor={true}
                                repeat={Infinity}/>
               </h2>
-          <p className='py-4 text-gray-200'>
+          <p className='py-4 text-gray-700'>
             I’m open for new opportunities!
           </p>
+          <div className='flex items-center justify-between max-w-[330px] m-auto text-black'>
+                <a
+                  href='https://www.linkedin.com/in/bazarkua'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full p-3 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
+                    <FaLinkedinIn className='text-2xl' />
+                  </div>
+                </a>
+                <a
+                  href='https://github.com/bazarkua'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full p-3 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
+                    <FaGithub  className='text-2xl'/>
+                  </div>
+                </a>
+                <Link href='/#contact'>
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className='rounded-full p-3 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'
+                  >
+                    <AiOutlineMail className='text-2xl'/>
+                  </div>
+                </Link>
+              </div>
         </div>
+        
       </div>
       </div>
   </div>
