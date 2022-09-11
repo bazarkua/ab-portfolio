@@ -17,7 +17,7 @@ const Skills = () => {
         </p>
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 p-20 pt-24 pt-24 rounded-3xl pl-12'> 
             {skills && skills.map ( n => ( 
-              <div key={n.id} className='cursor-pointer p-6  bg-[#ffff] rounded-3xl group hover:bg-gradient-to-r from-white via-fuchsia-200 to-indigo-200 ease-in duration-300 hover:scale-105 ease-in duration-300'>
+              <div key={n.id} className='cursor-pointer p-6  bg-[#ffff] rounded-3xl group hover:bg-gradient-to-r from-white via-blue-200 to-sky-200 ease-in duration-300 hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image src={`/assets/skills/${n.title}.png`} width='64px' height='64px' alt='/' />

@@ -21,7 +21,7 @@ const Contact = () => {
       
           {/* left */}
           {/* right */}
-          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 bg-gradient-to-r from-white via-fuchsia-200 to-indigo-200'>
+          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 bg-gradient-to-r from-white via-blue-200 to-sky-200'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/2f824084-b279-451b-b47f-005b64c522cc'
