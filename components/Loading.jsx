@@ -4,11 +4,11 @@ import { Triangle } from  'react-loader-spinner'
 
 const Loading = () => {
     return (
-        <div className='bg-white w-full h-screen flex justify-center items-center text-center text-medium'>
+        <div className='bg-black w-full h-screen flex justify-center items-center text-center text-medium'>
           <Triangle
                 height="150"
                 width="150"
-                color="black"
+                color="white"
                 ariaLabel="triangle-loading"
                 wrapperStyle={{}}
                 wrapperClassName=""
