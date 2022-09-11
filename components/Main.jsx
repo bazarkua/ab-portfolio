@@ -55,7 +55,7 @@ const Main = (props) => {
           <h1 className="py-4 text-gray-800">
               Hi, I&#39;m <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> Adilbek </span>
           </h1>
-              <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-sky-700 to-violet-500'>
+              <h2 className='text-gray-800'>
                 <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Developer', 3000, 'A Enthuasist', 3000]}
                                wrapper="div"
                                cursor={true}
@@ -85,7 +85,6 @@ const Main = (props) => {
                 </a>
                 <Link href='/#contact'>
                   <div
-                    onClick={() => setNav(!nav)}
                     className='rounded-full p-3 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'
                   >
                     <AiOutlineMail className='text-2xl'/>

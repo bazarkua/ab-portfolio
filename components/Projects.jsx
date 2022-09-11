@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div id='projects' className='snap-always snap-start'>
       <div className='w-full md:h-full flex items-center bg-[#eff7f6] bg-white'>
-      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 text-2xl font-normal pt-12'>
+      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 text-2xl text-black font-normal pt-12 pb-12 bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-white'>
             PROJECTS
       </p>
     <div className='w-full lg:h-full bg-[#eff7f6] bg-white pb-12 pt-48'>
@@ -20,7 +20,7 @@ const Projects = () => {
     </p>
       <div className='max-w-[1240px] mx-auto px-4 pb-24'>
       
-        <div className='grid md:grid-cols-2 gap-16 md:p-12'>
+        <div className='grid lg:grid-cols-2 gap-16 md:p-12'>
           <ProjectItem
             icon='2'
             title='Social App Prototype'

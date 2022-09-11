@@ -33,13 +33,13 @@ export const skills = [
     },
     {
         title: 'nextjs',
-        name: 'NEXT.Js',
+        name: 'NEXT.JS',
         experience: '6 months',
         id: 6,
     },
     {
         title: 'nodejs',
-        name: 'Node.Js',
+        name: 'Node.JS',
         experience: '2 years',
         id: 7,
     },
@@ -63,7 +63,7 @@ export const skills = [
     },
     {
         title: 'three',
-        name: 'THREE.Js',
+        name: 'THREE.JS',
         experience: '3 months',
         id: 12,
     },

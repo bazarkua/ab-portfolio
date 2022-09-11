@@ -8,10 +8,10 @@ const About = () => {
   return (
     <div id='about' className='snap-always snap-start'>
     <div className='w-full md:h-full flex items-center bg-[#eff7f6] bg-white pt-36 pb-36'>
-    <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pt-0 pl-12 text-2xl font-normal'>
+    <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pt-12 pb-12 pl-12 pr-14 text-2xl font-normal bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-white text-black'>
             ABOUT
     </p>
-      <div className='text-lg text-gray-800 max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-3xl p-20 bg-[#ffff] tracking-widest border-gradient-t-instagram-gradient-white border-transparent border-solid border-[1.5px]'>
+      <div className='text-lg text-black max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-3xl p-20 bg-gradient-to-r from-rose-200 via-fuchsia-200 to-indigo-200 tracking-widest'>
         <div className='col-span-2'>
         <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4'>
             ABOUT

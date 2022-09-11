@@ -8,7 +8,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import NavLogo from '../public/assets/fav.svg'
 import {MdDarkMode, MdLightMode} from 'react-icons/md';
 import { CgDarkMode } from 'react-icons/cg';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Menu } from '@headlessui/react'
 
 
 const Navbar = () => {
@@ -58,30 +58,68 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-14 2xl:px-16'>
+      <div className='justify-between items-center w-full h-full px-14 2xl:px-16'>
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex pt-6 flex flex-row'>
+            <li className='ml-10 row-1 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
               <Link href='/#home'>Home</Link>
             </li>
-            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            <li className='ml-10 row-2 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
               <Link href='/#about'>About</Link>
             </li>
-            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            <li className='ml-10 row-3 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            <li className='ml-10 row-4 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
-              <button className='shadow-none text-white font-light hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>Resume</button>
+            <li className='ml-10 row-5 text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            <Menu>
+              <Menu.Button className='font-light text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>Resume</Menu.Button>
+                <Menu.Items className='fixed flex flex-col text-gray-100 bg-black opacity-[1] rounded-2xl p-4'>
+                  <Menu.Item>
+                    {({ active }) => (
+                    <a
+                        className={`${active && 'text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'} text-[17px] py-2`}
+                        href="Adilbek-Bazarkulov-CV.pdf" title="Adilbek Bazarkulov CV"
+                      >
+                        View
+                      </a>
+                    )}
+                  </Menu.Item>
+                <Menu.Item>
+                 {({ active }) => (
+                    <a
+                     className={`${active && 'text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'} text-[17px] py-2`}
+                     href="Adilbek-Bazarkulov-CV.pdf" download="Adilbek-Bazarkulov-CV.pdf"
+                    >
+                      Download
+                    </a>
+                  )}
+                 </Menu.Item>
+             </Menu.Items>
+            </Menu>
             </li>
-            <li className='ml-10 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            <li className='ml-10 row-6 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
               <Link href='/#contact'>Contact</Link>
             </li>
+            <li className='xl:ml-[47%] lg:ml-[33%] md:ml-[12%] sm:ml-[17%] text-white text-xl'>
+            <button>
+          
+            <CgDarkMode
+              size={25}
+              className='cursor-pointer'
+              style={{ color: 'white'}}
+            />
+          
+        </button>
+        </li>
+            
           </ul>
-          {/* Hamburger Icon */}
-          <div
+          <div className='flex flex-row'>
+          <div className='row-1 text-white text-xl md:hidden pt-6 pr-[80%]'>
+            
+        <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
             className='md:hidden'
@@ -89,15 +127,20 @@ const Navbar = () => {
             <AiOutlineMenu size={25} style={{ color: 'white'}} />
           </div>
         </div>
-        <Link href='/'>
-          <a>
+          {/* Hamburger Icon */}
+          <button className='pt-6 row-2 md:hidden'>
+          
             <CgDarkMode
               size={25}
               className='cursor-pointer'
               style={{ color: 'white'}}
             />
-          </a>
-        </Link>
+          
+        </button>
+        </div>
+          
+        </div>
+        
       </div>
 
       {/* Mobile Menu */}
