@@ -17,7 +17,7 @@ const Contact = () => {
             CONTACT
       </p>
       
-      <div className='max-w-[1240px] m-auto px-2 w-full h-full flex justify-center pr-14'>
+      <div className='max-w-[1240px] m-auto px-2 w-full h-full flex justify-center pr-0'>
       
           {/* left */}
           {/* right */}
