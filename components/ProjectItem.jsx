@@ -58,7 +58,7 @@ function Icons(props) {
 }
 
   return (
-    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-rose-200 via-fuchsia-200 to-indigo-200 ease-in duration-1000'>
+    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-white via-fuchsia-200 to-indigo-200 ease-in duration-1000'>
     
     <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' 
     width={1440}

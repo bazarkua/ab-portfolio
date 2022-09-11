@@ -58,7 +58,7 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='justify-between items-center w-full h-full px-14 2xl:px-16'>
+      <div className='justify-between items-center w-full h-full px-14 2xl:px-16 bg-gradient-to-r from-gray-700 via-black to-black'>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex pt-6 flex flex-row'>
             <li className='ml-10 row-1 text-white text-xl hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>

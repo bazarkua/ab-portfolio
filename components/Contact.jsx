@@ -17,11 +17,11 @@ const Contact = () => {
             CONTACT
       </p>
       
-      <div className='max-w-[1240px] m-auto px-2 w-full h-full flex justify-center pr-0'>
+      <div className='max-w-[1240px] m-auto px-2 w-full h-full flex justify-center lg:pr-12 md:pr-12 sm:pr-0'>
       
           {/* left */}
           {/* right */}
-          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 bg-gradient-to-r from-rose-200 via-fuchsia-200 to-indigo-200'>
+          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 bg-gradient-to-r from-white via-fuchsia-200 to-indigo-200'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/2f824084-b279-451b-b47f-005b64c522cc'
