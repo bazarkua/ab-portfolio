@@ -19,8 +19,8 @@ function Icons(props) {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <div className='rounded-full p-2 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
-                      <FaGithub className='text-4xl'/>
+                    <div className='rounded-full p-2 cursor-pointer  hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
+                      <FaGithub className='text-4xl text-black dark:text-gray-100 hover:text-white ease-in duration-300 dark:hover:text-slate-700 ease-in duration-300'/>
                     </div>
                   </a>
       </div>
@@ -36,8 +36,8 @@ function Icons(props) {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='rounded-full p-2 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
-                  <CgFileDocument className='text-4xl'/>
+                <div className='rounded-full p-2 cursor-pointer hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
+                  <CgFileDocument className='text-4xl text-black dark:text-gray-100 hover:text-white ease-in duration-300 dark:hover:text-slate-700 ease-in duration-300'/>
                 </div>
               </a>
     </div>
@@ -48,8 +48,8 @@ function Icons(props) {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='rounded-full p-2 cursor-pointer hover:text-white hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
-                  <FaFigma className='text-4xl'/>
+                <div className='rounded-full p-2 cursor-pointer hover:scale-110 ease-in duration-300 hover:hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-300'>
+                  <FaFigma className='text-4xl text-black dark:text-gray-100 hover:text-white ease-in duration-300 dark:hover:text-slate-700 ease-in duration-300'/>
                 </div>
               </a>
     </div>
@@ -58,19 +58,19 @@ function Icons(props) {
 }
 
   return (
-    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-1000'>
+    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 dark:from-sky-400 via-fuchsia-500 to-indigo-500 ease-in duration-1000'>
     
     <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' 
     width={1440}
     height={890}/> 
     <div className='hidden group-hover:block absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-      <h3 className='text-xl font-light text-white tracking-wider text-center text-md pb-10'>{title}</h3>
+      <h3 className='text-xl font-light text-black dark:text-gray-100 tracking-wider text-center text-md pb-10'>{title}</h3>
     </div>
  
     <Icons Icon={icon}/>
 
     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                <p className='text-center text-white text-sm'>{tech}</p>
+                <p className='text-center text-black dark:text-gray-100 text-sm'>{tech}</p>
     </div>
     
  </div>

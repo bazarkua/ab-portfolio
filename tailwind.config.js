@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -27,6 +28,7 @@ module.exports = {
         'gray-50': '#F9FAFB',
         'gray-900':'#111827',
         'white':'#ffff',
+        'black':'#0000',
         
       },
       borders: { // defaults to these values (optional)

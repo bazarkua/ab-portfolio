@@ -7,11 +7,11 @@ import { TypeAnimation } from 'react-type-animation';
 const About = () => {
   return (
     <div id='about' className='snap-always snap-start'>
-    <div className='w-full md:h-full flex items-center bg-[#eff7f6] bg-white pt-36 pb-36'>
-    <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pt-12 pb-12 pl-12 pr-14 text-2xl font-normal bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-white'>
+    <div className='w-full md:h-full flex items-center bg-white dark:bg-slate-900 pt-36 pb-36'>
+    <p className='bg-gradient-to-r from-rose-300 via-purple-400 to-indigo-500 dark:from-blue-300 via-sky-2800 to-indigo-500 hidden md:flex uppercase text-2xl text-center tracking-widest pt-12 pb-12 pl-12 pr-14 text-2xl font-normal text-white'>
             ABOUT
     </p>
-      <div className='text-lg text-black max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-3xl p-20 tracking-widest border-solid border-[2px] border-gradient-br-instagram-gradient-white border-transparent'>
+      <div className='text-lg text-black dark:text-white max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-3xl p-20 tracking-widest'>
         <div className='col-span-2'>
         <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4'>
             ABOUT
