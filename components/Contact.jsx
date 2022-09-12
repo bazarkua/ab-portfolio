@@ -13,7 +13,7 @@ const Contact = () => {
             CONTACT
         </p>
     <div className='w-full flex items-center lg:h-full pb-24'>
-      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 pb-12 pt-12 text-black text-2xl font-normal bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-white'>
+      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 pb-12 pt-12 text-white text-2xl font-normal bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'>
             CONTACT
       </p>
       
@@ -21,7 +21,7 @@ const Contact = () => {
       
           {/* left */}
           {/* right */}
-          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 bg-gradient-to-r from-white via-blue-200 to-sky-200'>
+          <div className='col-span-6 w-[80%] md:w-[60%] h-auto rounded-2xl lg:p-12 md:mr-48 border-solid border-[2px] border-gradient-br-instagram-gradient-white border-transparent'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/2f824084-b279-451b-b47f-005b64c522cc'

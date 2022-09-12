@@ -58,19 +58,19 @@ function Icons(props) {
 }
 
   return (
-    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-white via-blue-200 to-sky-200 ease-in duration-1000'>
+    <div className='bg-transparent relative flex items-center justify-center h-full bg-white w-full rounded-xl group hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 ease-in duration-1000'>
     
     <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' 
     width={1440}
     height={890}/> 
     <div className='hidden group-hover:block absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-      <h3 className='text-xl font-light text-black tracking-wider text-center text-md pb-10'>{title}</h3>
+      <h3 className='text-xl font-light text-white tracking-wider text-center text-md pb-10'>{title}</h3>
     </div>
  
     <Icons Icon={icon}/>
 
     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                <p className='text-center text-black text-sm'>{tech}</p>
+                <p className='text-center text-white text-sm'>{tech}</p>
     </div>
     
  </div>

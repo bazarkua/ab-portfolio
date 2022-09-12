@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div id='projects' className='snap-always snap-start'>
       <div className='w-full md:h-full flex items-center bg-[#eff7f6] bg-white'>
-      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 text-2xl text-black font-normal pt-12 pb-12 bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-white'>
+      <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 text-2xl text-white font-normal pt-12 pb-12 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'>
             PROJECTS
       </p>
     <div className='w-full lg:h-full bg-[#eff7f6] bg-white pb-12 pt-48'>
