@@ -14,11 +14,11 @@ const Projects = () => {
       <p className='hidden md:flex uppercase text-2xl text-center tracking-widest pl-12 pr-14 text-2xl text-white font-normal pt-12 pb-12 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'>
             PROJECTS
       </p>
-    <div className='w-full lg:h-full bg-[#eff7f6] bg-white pb-12 pt-48'>
+    <div className='w-full lg:h-full bg-[#eff7f6] bg-white pb-12 pt-24'>
     <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4 pb-12'>
             PROJECTS
     </p>
-      <div className='max-w-[1240px] mx-auto px-4 pb-24'>
+      <div className='max-w-[1240px] mx-auto px-4 pb-26'>
       
         <div className='grid lg:grid-cols-2 gap-16 md:p-12'>
           <ProjectItem
