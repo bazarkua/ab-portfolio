@@ -15,7 +15,7 @@ const Projects = () => {
             PROJECTS
       </p>
     <div className='w-full lg:h-full pb-12 pt-24'>
-    <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4 pb-12'>
+    <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4 pb-12 text-black dark:text-gray-100'>
             PROJECTS
     </p>
       <div className='max-w-[1240px] mx-auto px-4 pb-26'>

@@ -12,7 +12,7 @@ const Skills = () => {
             SKILLS
     </p>
       <div className='max-w-[1240px] m-auto flex flex-col justify-center'>
-      <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4'>
+      <p className='md:hidden uppercase text-2xl text-center tracking-widest pt-0 pl-4 text-black dark:text-gray-100'>
             SKILLS
         </p>
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 p-20 pt-24 pt-24 rounded-3xl pl-12 text-black dark:text-gray-100'> 

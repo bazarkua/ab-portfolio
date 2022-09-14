@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className='bg-white dark:bg-slate-900 snap-always snap-start pt-24'>
-       <p className='md:hidden uppercase text-2xl text-center tracking-widest'>
+       <p className='md:hidden uppercase text-2xl text-center tracking-widest text-black dark:text-gray-100'>
             CONTACT
         </p>
     <div className='w-full flex items-center lg:h-full pb-24'>
