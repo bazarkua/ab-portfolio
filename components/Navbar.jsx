@@ -101,7 +101,7 @@ const Navbar = () => {
                     {({ active }) => (
                     <a
                         className={`${active && 'text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'} text-[17px] py-2`}
-                        href="Adilbek-Bazarkulov-CV.pdf" title="Adilbek Bazarkulov CV"
+                        href="Adilbek-Bazarkulov-Resume.pdf" title="Adilbek Bazarkulov Resume"
                       >
                         View
                       </a>
