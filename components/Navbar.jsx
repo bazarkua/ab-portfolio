@@ -91,7 +91,7 @@ const Navbar = () => {
               </Link>
               <span className="absolute -bottom-1 top-6 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600  transition-all group-hover:w-full"></span>
             </li>
-            <li className='row-5 ml-10 text-xl relative group hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
+            {/*<li className='row-5 ml-10 text-xl relative group hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>
             <Menu>
             <span>
               <Menu.Button className='font-light dark:text-white text-xl border-none shadow-none hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500'>Resume</Menu.Button>
@@ -121,6 +121,7 @@ const Navbar = () => {
             </Menu>
             <span className="absolute -bottom-1 top-6 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600  transition-all group-hover:w-full"></span>
             </li>
+                 */}
             <li className="row-6 ml-10 text-xl relative group hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500">
               <Link href="/#contact">
               <span>Contact</span>
@@ -212,6 +213,7 @@ const Navbar = () => {
               </Link>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 transition-all group-hover:w-full"></span>
             </li>
+            {/*
             <li className="relative group w-[30%] pt-6">
               <span>
               <Menu>
@@ -242,6 +244,7 @@ const Navbar = () => {
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 transition-all group-hover:w-full"></span>
             </li>
+                 */}
             <li className="relative group w-[30%] pt-6 hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ease-in duration-500" onClick={() => setNav(false)}>
               <Link href="/#contact">
               <span>Contact</span>
