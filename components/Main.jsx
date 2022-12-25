@@ -53,7 +53,7 @@ const Main = (props) => {
       
         <div className='absolute bg-gray-50 opacity-[0.9]  dark:bg-gray-900 opacity-[0.9] fixed top-[50%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h1 className="py-4 text-gray-800 dark:text-gray-100">
-              Hi, I&#39;m <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-700 dark:from-sky-300 to-blue-400'> Adilbek </span>
+              Hi, I&#39;m <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-700'> Adilbek </span>
           </h1>
               <h2 className='text-gray-800 dark:text-gray-100'>
                 <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Developer', 3000, 'A Enthuasist', 3000]}
