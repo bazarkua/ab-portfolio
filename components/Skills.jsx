@@ -3,6 +3,7 @@ import React from 'react';
 import Html from '../public/assets/skills/html.png';
 import {skills} from "./SkillsList";
 
+
 const Skills = () => {
   return (
     <div id='skills' className='snap-start snap-always'>
