@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import teamupPng from '../public/assets/projects/teamup.png';
 import carwormsPng from '../public/assets/projects/carworms.png'
-import smallshIcon from '../public/assets/projects/linux.jpeg'
+import smallsh from '../public/assets/projects/linux.png'
 import ProjectItem from './ProjectItem';
 
 
@@ -39,7 +39,7 @@ const Projects = () => {
           <ProjectItem 
             icon='1'
             title='Smallsh Mini Linux console'
-            backgroundImg={smallshIcon}
+            backgroundImg={smallsh}
             projectUrl='/smallsh'
             tech='C, Unix process API, Unix signal handling, I/O redirection'
             src1='https://github.com/bazarkua/smallsh'
