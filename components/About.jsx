@@ -6,8 +6,8 @@ import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
   return (
-    <div id='about' className='snap-always snap-start'>
-    <div className='w-full md:h-full flex items-center bg-white dark:bg-slate-900 pt-36 pb-36'>
+    <div id='about' className='snap-start snap-always'>
+    <div className='w-full lg:h-screen md:h-full flex items-center bg-white dark:bg-slate-900 pt-12 pb-36'>
     <p className='bg-gradient-to-r from-rose-300 via-purple-400 to-indigo-500 dark:from-blue-300 via-sky-2800 to-indigo-500 hidden md:flex uppercase text-2xl text-center tracking-widest pt-12 pb-12 pl-12 pr-14 text-2xl font-normal text-white'>
             ABOUT
     </p>

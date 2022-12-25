@@ -5,9 +5,9 @@ import {skills} from "./SkillsList";
 
 const Skills = () => {
   return (
-    <div id='skills' className='snap-always snap-start'>
+    <div id='skills' className='snap-start snap-always'>
    
-    <div className='w-full lg:h-screen md:h-full flex items-center bg-white dark:bg-slate-900 pt-24'>
+    <div className='w-full lg:h-screen md:h-full flex items-center bg-white dark:bg-slate-900'>
     <p className='hidden md:flex bg-gradient-to-r from-rose-300 via-purple-400 to-indigo-500 dark:from-blue-300 via-sky-2800 to-indigo-500 uppercase text-2xl text-center tracking-widest pt-12 pb-12 pl-12 pr-14 text-2xl font-normal text-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'>
             SKILLS
     </p>

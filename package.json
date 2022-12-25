@@ -19,6 +19,7 @@
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
     "react-loader-spinner": "^5.3.3",
+    "react-textarea-autosize": "^8.4.0",
     "react-type-animation": "^2.1.1",
     "tailwindcss-border-gradient-radius": "^3.0.1",
     "three": "^0.143.0",

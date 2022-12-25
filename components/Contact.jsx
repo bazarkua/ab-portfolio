@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import TextareaAutosize from 'react-textarea-autosize';
 
 const Contact = () => {
 
   return (
-    <div id="contact" className='bg-white dark:bg-slate-900 snap-always snap-start pt-24'>
+    <div id="contact" className='bg-white dark:bg-slate-900 snap-always snap-start'>
        <p className='md:hidden uppercase text-2xl text-center tracking-widest text-black dark:text-gray-100'>
             CONTACT
         </p>
@@ -17,7 +18,7 @@ const Contact = () => {
             CONTACT
       </p>
       
-      <div className='max-w-[1240px] m-auto px-2 w-full h-full flex justify-center lg:pr-12 md:pr-12 sm:pr-0'>
+      <div className='max-w-[1240px] m-auto px-2 w-full h-screen flex justify-center lg:pr-12 md:pr-12 sm:pr-0 pt-36'>
       
           {/* left */}
           {/* right */}
@@ -41,12 +42,11 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
-                  <textarea
+                  <input
                     className='rounded-md p-3 text-black border-solid border border-[#d2d7df] bg-white'
-                    rows='10'
                     name='message'
                     placeholder='your message...'
-                  ></textarea>
+                  ></input>
                 </div>
                 <div className='w-full text-center'>
                 <button className='text-black dark:text-gray-100 shadow-sm shadow-[#7371fc] p-2 mt-4 hover:border-[#eff7f6] hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 dark:from-blue-300 via-sky-2800 to-indigo-500 ease-in duration-1000 hover:text-gray-100'>
