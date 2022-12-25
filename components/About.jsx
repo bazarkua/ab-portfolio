@@ -17,17 +17,13 @@ const About = () => {
             ABOUT
         </p>
           <p className='pt-6 py-2'>
-          My name is Adilbek Bazarkulov, I'm a student software developer currently studying at Oregon State University.
+          Hi there! My name is Adilbek and I am a Computer Science student at Oregon State University in the United States. I am originally from Kyrgyzstan and have always had a fascination with science and technology. This led me to pursue a degree in Computer Science and I am now fortunate enough to be studying at a top university in the field.
           </p>
           <p className='py-2'>
-          I believe that on the way to creating a great product, passion and enthusiasm go hand in hand with attention to small details. 
-          I've always wanted to use my creative energy and skills to create products that would have a positive impact on people. 
-          It has always fascinated me that technical skills combined with a great idea become such a powerful tool for creativity.
+          I am very excited to be studying at OSU and learning from some of the best computer science professors in the world. In addition to my studies, I also work part-time as a teaching assistant helping other students learn programming. I really enjoy being able to share my knowledge with others and help them achieve their goals.
           </p>
           <p className='py-2'>
-          I'm currently a full-time student and working part-time as a Teaching Assistant for CS372 (Computer Networks) course at the College of 
-          Engineering, Oregon State University. In my free time, I strive to learn something new and expand my knowledge of Computer Science on my own. 
-          I also enjoy going out and playing volleyball with my friends.
+          In my free time, I enjoy playing volleyball with friends and staying up-to-date on the latest technology trends. My ultimate dream is to become a software engineer and make a positive impact on the world through my work. I believe that technology has the power to solve some of the biggest problems facing society today, and I want to be a part of that solution.
           </p>
         </div>
         <div className='w-full h-auto m-auto rounded-3xl flex items-center 

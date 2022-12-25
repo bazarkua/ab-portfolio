@@ -56,13 +56,13 @@ const Main = (props) => {
               Hi, I&#39;m <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-700'> Adilbek </span>
           </h1>
               <h2 className='text-gray-800 dark:text-gray-100'>
-                <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Developer', 3000, 'A Enthuasist', 3000]}
+                <TypeAnimation sequence={['A Computer Scientist', 3000, 'A Software Developer', 3000, 'An Enthuasist', 3000, 'An Adventurer', 3000, 'A Creator', 3000, 'A Learner', 3000]}
                                wrapper="div"
                                cursor={true}
                                repeat={Infinity}/>
               </h2>
           <p className='py-4 text-gray-700 dark:text-gray-200'>
-            I’m open for new opportunities!
+          "The process of creativity is the process of breaking out of established patterns in order to look at things in a different way." - Edward De Bono
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto text-black dark:text-gray-300'>
                 <a
